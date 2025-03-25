@@ -72,8 +72,8 @@ void exibir_cartas(struct Cartas cartas[2])
         printf("Área: %f km²\n", cartas[i].area);
         printf("PIB: %f bilhões de reais\n", cartas[i].pib);
         printf("Número de Pontos Turísticos: %i\n", cartas[i].pontosTuristicos);
-        printf("Densidade Populacional: %f hab/km²", cartas[i].densidade_populacional);
-        printf("PIB per Capita: %f reais", cartas[i].pib_percapita);
+        printf("Densidade Populacional: %f hab/km²\n", cartas[i].densidade_populacional);
+        printf("PIB per Capita: %f reais\n", cartas[i].pib_percapita);
         printf("\n");
     }
 
@@ -90,7 +90,9 @@ void comparar_cartas(struct Cartas cartas[2])
     printf("4. Densidade Populacional\n");
     printf("5. PIB per Capita\n");
     printf("6. Super Poder\n");
+    printf("Digite a opção: ");
     scanf("%d", &opcao);
+    printf("\n");
 
     switch (opcao)
     {
@@ -122,6 +124,7 @@ void comparar_cartas(struct Cartas cartas[2])
             printf("Opção inválida!\n");
             break;
     }
+    printf("\n");
 }
 
 int main(void)
