@@ -109,7 +109,7 @@ void comparar_cartas(struct Cartas cartas[2])
             break;
 
         case 4:
-            printf("Densidade Populacional: %s\n", (cartas[0].densidade_populacional > cartas[1].densidade_populacional) ? "Carta 1 Venceu" : "Carta 2 Venceu");
+            printf("Densidade Populacional: %s\n", (cartas[0].densidade_populacional < cartas[1].densidade_populacional) ? "Carta 1 Venceu" : "Carta 2 Venceu");
             break;
 
         case 5:
